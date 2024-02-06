@@ -16,6 +16,11 @@ section.img-left {
     background-size: cover;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gaps) / 5);
+}
 
 .main-content > * {
     width: 35vw;
