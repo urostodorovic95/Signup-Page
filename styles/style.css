@@ -91,6 +91,15 @@ input {
   border-radius: 5px;
 }
 
+input:focus {
+    border: 1px solid blue;
+    opacity: 0.5;
+}
+
+input:valid {
+   border: 3px solid green;
+}
+
 button {
   width: calc(var(--fields-width) - 1vh);
   height: 50px;
