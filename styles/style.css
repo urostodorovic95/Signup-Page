@@ -27,6 +27,7 @@ section.img-left {
 }
 
 .main-content {
+  width: 60vw;
   display: flex;
   flex-direction: column;
   gap: calc(var(--gaps) / 5);
@@ -36,10 +37,10 @@ section.img-left {
 .main-content > div:nth-child(-n+4) {
     line-height: 1.2;
     font-size: calc(var(--text-base-size) + 5px);
+    width: 35vw;
 }
 
 .main-content > * {
-  width: 35vw;
   font-size: var(--text-base-size);
 }
 
@@ -47,13 +48,18 @@ form {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: aliceblue;
+  margin-left: calc(-1 * var(--gaps));
+  padding-left: var(--gaps);
 }
 
 .fieldset {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 5vw;
   margin-bottom: 20px;
+  flex: 1;
+  width: 40vw;
 }
 
 legend {
