@@ -51,6 +51,7 @@ form {
   background-color: aliceblue;
   margin-left: calc(-1 * var(--gaps));
   padding-left: var(--gaps);
+  position: relative;
 }
 
 .fieldset {
@@ -80,5 +81,6 @@ button {
     height: 40px;
     border-radius: 10px;
     border: none;
-    
+    position: absolute;
+    bottom: -8vh;
 }
