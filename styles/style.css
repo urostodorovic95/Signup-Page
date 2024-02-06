@@ -75,6 +75,7 @@ legend {
 
 label {
   display: block;
+  font-size: smaller;
 }
 
 input {
