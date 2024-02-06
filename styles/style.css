@@ -1,0 +1,23 @@
+:root {
+    --text-base-size: 20px;
+    --gaps: calc(3vw + (var(--text-base-size) / 2))
+}
+
+main {
+    display: flex;
+    gap: var(--gaps);
+}
+
+section.img-left {
+    border: 2px solid black;
+    width: 40vw;
+    height: 100vh;
+    background-image: url(../static/images/fulvio-ciccolo-BU46fEYMbsQ-unsplash.jpg);
+    background-size: cover;
+}
+
+
+.main-content > * {
+    width: 35vw;
+    font-size: var(--text-base-size);
+}
