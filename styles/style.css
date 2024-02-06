@@ -35,6 +35,8 @@ section.img-left {
   flex-direction: column;
   gap: calc(var(--gaps) / 5);
   margin-top: 5vh;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .main-content > div:nth-child(-n + 4) {
