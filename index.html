@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./scripts/svg-flash.js" defer></script>
+    <script src="./scripts/pw_valdiation.js" defer></script>
     <title>Sign-up now | ChemSecrets</title>
   </head>
   <body>
@@ -142,9 +143,10 @@
           </g>
 
           <g id="Layer_1" />
-        
         </svg>
-        <div id="flash-desribe">Devs: ⬇️⬇️Click the logo to see some SVG magic! 😉 ⬇️⬇️</div>
+        <div id="flash-desribe">
+          Devs: ⬇️⬇️Click the logo to see some SVG magic! 😉 ⬇️⬇️
+        </div>
       </section>
       <section class="main-content">
         <div>
@@ -189,9 +191,15 @@
               </div>
               <div>
                 <label for="pw-confirm">Confirm Password</label>
-                <input type="password" name="pw-confirm" id="pw-confirm" required />
+                <input
+                  type="password"
+                  name="pw-confirm"
+                  id="pw-confirm"
+                  required
+                />
               </div>
             </div>
+            <p id="pw-problem-notify"></p>
             <button type="submit">Join Now</button>
           </form>
         </div>

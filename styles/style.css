@@ -92,12 +92,12 @@ input {
 }
 
 input:focus {
-    border: 1px solid blue;
-    opacity: 0.5;
+  border: 1px solid blue;
+  opacity: 0.5;
 }
 
 input:valid {
-   border: 3px solid green;
+  border: 3px solid green;
 }
 
 button {
@@ -135,12 +135,16 @@ svg {
 }
 
 #flash-desribe {
-    position: absolute;
-    top: 2px;
-    color:#f6f6f6;
-    user-select: none;
-    -webkit-user-select: none;
-    font-family: "Roboto", sans-serif;
-    background-color: #7a3955;
-    
+  position: absolute;
+  top: 2px;
+  color: #f6f6f6;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #7a3955;
+}
+
+#pw-problem-notify {
+  color: #f44490;
+  margin-top: 3px;
 }
