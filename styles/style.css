@@ -1,29 +1,49 @@
 :root {
-    --text-base-size: 20px;
-    --gaps: calc(3vw + (var(--text-base-size) / 2))
+  --text-base-size: 20px;
+  --gaps: calc(3vw + (var(--text-base-size) / 2));
 }
 
 main {
-    display: flex;
-    gap: var(--gaps);
+  display: flex;
+  gap: var(--gaps);
 }
 
 section.img-left {
-    border: 2px solid black;
-    width: 40vw;
-    height: 100vh;
-    background-image: url(../static/images/fulvio-ciccolo-BU46fEYMbsQ-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+  border: 2px solid black;
+  width: 40vw;
+  height: 100vh;
+  background-image: url(../static/images/fulvio-ciccolo-BU46fEYMbsQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--gaps) / 5);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gaps) / 5);
 }
 
 .main-content > * {
-    width: 35vw;
-    font-size: var(--text-base-size);
+  width: 35vw;
+  font-size: var(--text-base-size);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 15vw;
 }
