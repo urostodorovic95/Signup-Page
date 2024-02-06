@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Workbench&display=swap');
+
 :root {
   --text-base-size: 20px;
   --gaps: calc(3vw + (var(--text-base-size) / 2));
+  --fields-width: 15vw;
+  background-color: rgb(213, 222, 220);	
+  color: 030637;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0px;
 }
 
 main {
@@ -9,7 +19,6 @@ main {
 }
 
 section.img-left {
-  border: 2px solid black;
   width: 40vw;
   height: 100vh;
   background-image: url(../static/images/fulvio-ciccolo-BU46fEYMbsQ-unsplash.jpg);
@@ -21,6 +30,12 @@ section.img-left {
   display: flex;
   flex-direction: column;
   gap: calc(var(--gaps) / 5);
+  margin-top: 5vh;
+}
+
+.main-content > div:nth-child(-n+4) {
+    line-height: 1.2;
+    font-size: calc(var(--text-base-size) + 5px);
 }
 
 .main-content > * {
@@ -29,6 +44,7 @@ section.img-left {
 }
 
 form {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -40,10 +56,23 @@ form {
   margin-bottom: 20px;
 }
 
+legend {
+    margin: 10px 0px;
+    font-family: "Workbench", sans-serif;
+}
+
 label {
   display: block;
 }
 
 input {
-  width: 15vw;
+  width: var(--fields-width);
+}
+
+button {
+    width: calc(var(--fields-width) - 4vw);
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    
 }
