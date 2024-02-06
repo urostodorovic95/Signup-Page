@@ -4,7 +4,7 @@
   --text-base-size: 20px;
   --gaps: calc(3vw + (var(--text-base-size) / 2));
   --fields-width: 15vw;
-  background-color: #ED7B7B;
+  background-color: #ed7b7b;
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,6 +23,10 @@ section.img-left {
   background-image: url(../static/images/fulvio-ciccolo-BU46fEYMbsQ-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5vh;
 }
 
 .main-content {
@@ -47,12 +51,13 @@ form {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #e8a0bf;
+  /* background-color: #e8a0bf; */
+  background-color: #7a3955;
   margin-left: calc(-1 * var(--gaps));
   margin-top: 40px;
   padding-left: var(--gaps);
   position: relative;
-  color: #F6F6F6;
+  color: #f6f6f6;
   border-top: 4px solid purple;
 }
 
@@ -70,7 +75,6 @@ legend {
   margin-bottom: 30px;
   font-family: "Workbench", sans-serif;
   font-size: larger;
-  color: #12372A;
 }
 
 label {
@@ -99,16 +103,22 @@ button {
 }
 
 .login-ask {
-    position: relative;
+  position: relative;
 }
 
 .login-ask > p {
-    position: absolute;
-    bottom: -140px;
+  position: absolute;
+  bottom: -140px;
 }
 
 p > a {
-    text-decoration: none;
-    color: #12372A;
-    font-weight: bold;
+  text-decoration: none;
+  color: #32805c;
+  font-weight: bold;
+}
+
+svg {
+  opacity: 0.6;
+  background-color: #7a3955;
+  flex: 1;
 }
