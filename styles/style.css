@@ -111,6 +111,12 @@ button {
   background-color: #53d397;
   color: #f7f9ff;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.button-disable {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .login-ask {

@@ -16,6 +16,7 @@ function processNoMatch() {
   submitButton.disabled = true;
   pwConfirm.style.border = "3px solid red";
   pw.style.border = "3px solid red";
+  submitButton.classList.toggle("button-disable")
 }
 
 function processMatch() {
@@ -23,4 +24,5 @@ function processMatch() {
   submitButton.disabled = false;
   pwConfirm.style.border = "3px solid green";
   pw.style.border = "3px solid green";
+  submitButton.classList.toggle("button-disable")
 }
